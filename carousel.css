@@ -1,0 +1,303 @@
+/* Review Carousel CSS */
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #fcfcfc;
+    color: #474747;
+    margin: 0;
+    font-size: 14px;
+    min-height: 100%;
+    min-width: 34.375em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+*,
+:after,
+:before {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+.review-heading {
+    width: 63%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px #333;
+    padding: 30px 0 10px;
+}
+
+.carousel-container {
+  padding-top: 15px;
+}
+.carousel {
+  position: relative;
+  width: 62%;
+  height: 415px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel .carousel-content {
+  position: relative;
+  overflow: hidden;
+  transition: width .4s;
+  height: 100%;
+}
+
+.carousel .slide {
+  height: 100%;
+  z-index: 1;
+  width: 220px;
+  transition: left .4s cubic-bezier(.47,.13,.15,.89);
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.carousel .inner {
+  background-color: rgba(0, 0, 0, 0.42);
+  padding: 10px 0 2px;
+}
+
+.carousel .diamond-box {
+  height: 50px;
+  width: 50px;
+  background-color: #0183ea;
+  border-radius: 30px;
+  left: 41%;
+  top: 4%;
+  margin: 10px auto;
+}
+
+.carousel .diamond-box span {
+  font-size: 25px;
+  line-height: 51px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.carousel .review-content {
+  display: block;
+}
+
+.carousel .name {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.carousel .comment {
+  color: #fff;
+  border: 2px solid #0183ea;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+
+.carousel .comment i {
+  display: block;
+  color: #d0a33d;
+  font-size: 13px;
+  padding-top: 8px;
+}
+
+.carousel .comment span {
+  max-height: 130px;
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.carousel .nav {
+  position: absolute;
+  top: 85%;
+  margin-top: -10px;
+  background-color: #0183ea;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  -webkit-user-select: none;
+  display: none;
+}
+
+.carousel .nav-left {
+  left: 30%;
+}
+
+.carousel .nav-right {
+  right: 30%;
+}
+
+.carousel .carousel-arrow-icon-left {
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.carousel .carousel-arrow-icon-right {
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.carousel .arrow {
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+  top: 13px;
+  position: relative;
+}
+
+.carousel .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  left: -2px;
+}
+
+.carousel .left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 2px;
+}
+
+.with-color {
+  box-shadow: 0 0 200px #ffffff;
+  height: 500px;
+  background-color: lightgrey;
+}
+
+/* Stars */
+.carousel .star-rating {
+  display: inline-block;
+  background: url(star-sprite.png) no-repeat;
+}
+
+.carousel .star-rating.star-rating-large {
+  width: 88px;
+  height: 19px;
+  background-position: -1px 0;
+}
+
+.carousel .star-rating.star-rating-large.stars-one {
+  background-position: -1px -15px;
+}
+
+.carousel .star-rating.star-rating-large.stars-two {
+  background-position: -1px -33px;
+}
+
+.carousel .star-rating.star-rating-large.stars-three {
+  background-position: -1px -51px;
+}
+
+.carousel .star-rating.star-rating-large.stars-four {
+  background-position: -1px -69px;
+}
+
+.carousel .star-rating.star-rating-large.stars-five {
+  background-position: -1px -87px;
+}
+
+.carousel .star-rating.star-rating-small {
+  width: 72px;
+  height: 16px;
+  background-position: -1px -106px;
+}
+
+.carousel .star-rating.star-rating-small.stars-one {
+  background-position: -1px -121px;
+}
+
+.carousel .star-rating.star-rating-small.stars-two {
+  background-position: -1px -135px;
+}
+
+.carousel .star-rating.star-rating-small.stars-three {
+  background-position: -1px -150px;
+}
+
+.carousel .star-rating.star-rating-small.stars-four {
+  background-position: -1px -164px;
+}
+
+.carousel .star-rating.star-rating-small.stars-five {
+  background-position: -1px -179px;
+}
+
+.carousel .score {
+  background: url(star-sprite.png) no-repeat;
+  text-indent: -15000px;
+}
+
+.carousel span.score {
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.carousel .score.large {
+  width: 88px;
+  height: 19px;
+  background-position: -1px 0;
+}
+
+.carousel .score.large.one {
+  background-position: -1px -15px;
+}
+
+.carousel .score.large.two {
+  background-position: -1px -33px;
+}
+
+.carousel .score.large.three {
+  background-position: -1px -51px;
+}
+
+.carousel .score.large.four {
+  background-position: -1px -69px;
+}
+
+.carousel .score.large.five {
+  background-position: -1px -87px;
+}
+
+.carousel .score.small {
+  width: 72px;
+  height: 16px;
+  background-position: -1px -106px;
+}
+
+.carousel .score.small.one {
+  background-position: -1px -121px;
+}
+
+.carousel .score.small.two {
+  background-position: -1px -135px;
+}
+
+.carousel .score.small.three {
+  background-position: -1px -150px;
+}
+
+.carousel .score.small.four {
+  background-position: -1px -164px;
+}
+
+.carousel .score.small.five {
+  background-position: -1px -179px;
+}
